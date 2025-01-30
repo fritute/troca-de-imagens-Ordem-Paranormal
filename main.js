@@ -1,9 +1,20 @@
 "use strict"
 
-const botaoTrocarImagem = document.getElementById( --imagem-fundo)
+const botaoTrocarImagem = document.getElementById('trocarfoto')
+let numero = 0
+let url = ""
 
-function trocarImagem(){
-    const imagem = document.getElementById('imagem').value
-    document.documentElement.style.setProperty('--imagem-fundo', imagem)
+function trocarImage(){
+    if(numero === 4){
+        numero = 0
+    }
+    numero++
+    url = `url(./img/ordem${numero}.png)`
+    document.documentElement.style.setProperty('--imagem-fundo' , url)
 }
-botaoTrocarImagem.addEventListener('click',trocarImagem)
+
+botaoTrocarImagem.addEventListener('click', trocarImage)
+
+
+
+

@@ -1,5 +1,5 @@
 :root{
-    --imagem-fundo: url(Front End - Zumba\atividade1\img)
+    --imagem-fundo:url(./img)
 }
 *{
     padding: 0;
@@ -11,10 +11,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: var(--imagem-fundo);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #trocarfoto{
     padding: 8px 16px;
     font-size: 32px;
     cursor: pointer;
-    background-image: var(--imagem-fundo);
+    
+    transition: 1s;
 }
