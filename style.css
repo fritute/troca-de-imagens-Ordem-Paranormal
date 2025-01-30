@@ -14,11 +14,12 @@ body{
     background-image: var(--imagem-fundo);
     background-size: cover;
     background-repeat: no-repeat;
+    transition: background-image 2s;
 }
 #trocarfoto{
     padding: 8px 16px;
     font-size: 32px;
     cursor: pointer;
-    
     transition: 1s;
+    border-radius: 15%;
 }

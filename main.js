@@ -5,7 +5,7 @@ let numero = 0
 let url = ""
 
 function trocarImage(){
-    if(numero === 4){
+    if(numero === 5){
         numero = 0
     }
     numero++
